@@ -1,0 +1,60 @@
+<%= form_for @member, :html => { :class => "form-horizontal member" } do |f| %>
+
+    <% if @member.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@member.errors.count, "error") %> prohibited this member from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @member.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%= error_span(@member[:name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :permalink, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :permalink, :class => 'form-control' %>
+    </div>
+    <%= error_span(@member[:permalink]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :age, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :age, :class => 'form-control' %>
+    </div>
+    <%= error_span(@member[:age]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :retired, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :retired, :class => 'form-control' %>
+    </div>
+    <%= error_span(@member[:retired]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :avatar_file_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.file_field :avatar %>
+    </div>
+    <%= error_span(@member[:avatar_file_name]) %>
+  </div>
+  </br>
+
+
+  <%= f.submit nil, :class => 'btn btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+            members_path, :class => 'btn btn-default' %>
+
+<% end %>
