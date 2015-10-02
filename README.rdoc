@@ -5,5 +5,5 @@ application up and running.
 
 This app was created as a test to generate live JSON files, connected to our database, which seed iOS and Android apps.
 
- <p>&copy; amronrails 2015</p>
+© amronrails 2015
 
