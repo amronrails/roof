@@ -195,7 +195,7 @@ body{
       
 }
 @-webkit-keyframes example {
-    0%   {background-color: left:0px; top:0px;}
+    0%   {background-color: left:0px; top:0px};
     25%  {background-color:left:200px; top:0px;}
     50%  {background-color: left:200px; top:200px;}
     75%  {background-color: left:0px; top:200px;}
