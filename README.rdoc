@@ -1,8 +1,5 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
 This app was created as a test to generate live JSON files, connected to our database, which seed iOS and Android apps.
 
 https://elroof.herokuapp.com/
