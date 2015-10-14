@@ -409,6 +409,7 @@ p {
     position:relative;
     -webkit-animation: mymove 5s 1; /* Chrome, Safari, Opera */
     animation: mymove 5s 1;
+    left: 900px;
 }
 /* Chrome, Safari, Opera */
 #p1 {-webkit-animation-timing-function: linear;}
