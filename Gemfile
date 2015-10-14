@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-#AMR 
+#AMR Mario
 
 gem 'therubyracer'
 gem 'less-rails'
