@@ -1,7 +1,5 @@
 source 'https://rubygems.org'
 
-#AMR Mario
-
 gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
